@@ -46,5 +46,23 @@ describe('Javabuzz', function() {
     });
   });
 
+  describe('when playing, says', function(){
+    it('"Buzz" when a number is divisible by 5', function(){
+      expect(javabuzz.says(5)).toEqual("Buzz");
+    });
+  });
+
+  describe('when playing, says', function(){
+    it('"JavaBuzz" when a number is divisible by 3 and 5', function(){
+      expect(javabuzz.says(15)).toEqual("JavaBuzz");
+    });
+  });
+
+  describe('when playing', function(){
+    it('returns integer when integer is not divisible by 3 or 5', function(){
+      expect(javabuzz.says(7)).toEqual(7);
+    });
+  });
+
 });
 

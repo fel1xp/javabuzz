@@ -16,9 +16,17 @@ class Javabuzz {
   }
 
   says(number){
+    if (this.isDivisibleByThreeAndFive(number)){
+      return "JavaBuzz";
+    }
     if (this.isDivisibleByThree(number)){
       return "Java";
     }
+    if (this.isDivisibleByFive(number)){
+      return "Buzz";
+    }
+    return number;
+    
   }
-  
+
 }
